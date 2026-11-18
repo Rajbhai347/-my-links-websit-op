@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090d1a">
+  <title>My Links | Connect With Me</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090d1a;--card:rgba(20,28,49,.78);--line:rgba(255,255,255,.10);--muted:#aab4ca;--white:#f7f9ff;--accent:#8b5cf6}
+    *{box-sizing:border-box} body{margin:0;min-height:100vh;color:var(--white);font-family:'Outfit','Hind Siliguri',sans-serif;background:radial-gradient(ellipse at 15% 5%,rgba(91,65,190,.28),transparent 35%),radial-gradient(ellipse at 90% 85%,rgba(0,176,180,.18),transparent 32%),var(--bg);overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:radial-gradient(#9ca9ca 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+    .wrap{width:min(100% - 32px,680px);margin:0 auto;padding:54px 0 32px;position:relative}
+    .profile{text-align:center;margin-bottom:30px}.avatar{width:94px;height:94px;border-radius:30px;margin:0 auto 17px;display:grid;place-items:center;font-size:38px;font-weight:800;background:linear-gradient(135deg,#8b5cf6,#06b6d4);box-shadow:0 12px 45px #6d4bd65c;border:1px solid #ffffff35}
+    h1{font-size:clamp(28px,7vw,38px);margin:0 0 7px;letter-spacing:-1px}.sub{margin:0;color:var(--muted);font-size:15px}
+    .tag{display:inline-flex;align-items:center;gap:7px;margin-top:16px;padding:7px 13px;border:1px solid var(--line);border-radius:999px;color:#d9dff0;font-size:12px;background:#ffffff08}
+    .dot{width:7px;height:7px;border-radius:50%;background:#34d399;box-shadow:0 0 12px #34d399}
+    .section-title{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#8995b0;margin:26px 4px 12px;font-weight:700}
+    .links{display:grid;gap:12px}.link{display:flex;align-items:center;gap:15px;padding:15px 17px;min-height:76px;border:1px solid var(--line);border-radius:19px;background:linear-gradient(120deg,rgba(28,38,65,.88),rgba(17,24,43,.82));color:var(--white);text-decoration:none;box-shadow:0 8px 25px #0002;transition:transform .2s,border-color .2s,background .2s;backdrop-filter:blur(12px)}
+    .link:hover{transform:translateY(-3px);border-color:#a78bfa88;background:linear-gradient(120deg,rgba(48,47,91,.95),rgba(17,35,57,.95))}
+    .ico{width:46px;height:46px;flex:0 0 46px;border-radius:15px;display:grid;place-items:center;font-size:23px;background:#ffffff12}
+    .info{min-width:0;flex:1}.name{font-size:16px;font-weight:700;display:block}.desc{font-size:12px;color:var(--muted);display:block;margin-top:3px}.arrow{font-size:20px;color:#8995b0;padding:0 4px}
+    .footer{text-align:center;color:#75809a;font-size:12px;margin-top:32px}.footer strong{color:#b7c1d7;font-weight:600}
+    .empty{color:var(--muted);text-align:center;padding:20px;border:1px dashed var(--line);border-radius:16px}
+    @media(max-width:480px){.wrap{padding-top:38px}.link{padding:13px 14px}.avatar{width:84px;height:84px;border-radius:27px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="profile">
+      <div class="avatar" id="avatar">M</div>
+      <h1 id="siteTitle">MY LINKS</h1>
+      <p class="sub" id="siteSubtitle">সব গুরুত্বপূর্ণ লিংক এক জায়গায়</p>
+      <div class="tag"><span class="dot"></span> <span>LET'S CONNECT</span></div>
+    </header>
+    <div class="section-title">CONNECT WITH ME</div>
+    <section class="links" id="links"></section>
+    <footer class="footer">Made with <strong>♥</strong> · <span id="footerName">MY LINKS</span></footer>
+  </main>
+  <script src="links.js"></script>
+</body>
+</html>
